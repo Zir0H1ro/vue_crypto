@@ -1,0 +1,365 @@
+.top-bar {
+  background-color: #193445;
+  height: 58px; }
+
+.top-bar h1 {
+  margin-bottom: 0;
+  font-style: italic;
+  font-weight: bold;
+  color: white;
+  width: 100%; }
+
+.fund-management div {
+  padding: 0; }
+
+.funds {
+  text-align: right;
+  text-transform: uppercase;
+  color: lightgray;
+  border-right: 1.2px solid gray;
+  height: 60%;
+  margin: auto;
+  margin-right: 10px; }
+  .funds h6 {
+    font-size: 14px; }
+
+.values {
+  display: inline-block;
+  margin: auto;
+  margin-right: 10px;
+  height: 60%;
+  border-right: 1.2px solid gray; }
+  .values p {
+    color: gray;
+    font-size: 5px;
+    text-transform: uppercase;
+    margin-bottom: 3px; }
+  .values h4 {
+    color: lightgray;
+    font-size: 12px;
+    margin-bottom: 3px; }
+  .values div {
+    margin-right: 3.2%; }
+
+.country-flag img {
+  width: 40%; }
+
+.dx-logo {
+  width: 3%;
+  margin-top: 1.4%;
+  margin-left: 1.2%;
+  height: 40%; }
+  .dx-logo div {
+    height: 18%;
+    margin-bottom: 15%;
+    border-radius: 1.5px; }
+  .dx-logo .red {
+    width: 80%;
+    background: -webkit-linear-gradient(#e1181e, #e61ea3); }
+  .dx-logo .green {
+    width: 60%;
+    background-color: #9df606; }
+  .dx-logo .blue {
+    width: 80%;
+    background-color: #65fdfe; }
+
+.user-data {
+  margin-top: 12px; }
+
+.user-data h4 {
+  font-size: 10px;
+  color: lightgray;
+  text-transform: capitalize; }
+
+.time-data p {
+  font-size: 6px;
+  color: lightgray;
+  text-transform: capitalize;
+  margin-right: 3px; }
+
+div.sidebar {
+  width: 28%;
+  background-color: #15273b;
+  padding: 0;
+  border-right: 1.3px solid #0a1a2a; }
+
+.sidebar nav ul {
+  list-style-type: none;
+  float: left;
+  padding: 0;
+  margin-bottom: 4px;
+  width: 100%;
+  height: 100%;
+  border-bottom: 0.2px solid rgba(170, 170, 170, 0.6);
+  text-align: center; }
+
+.sidebar nav ul li {
+  width: 25%;
+  float: left; }
+  .sidebar nav ul li a {
+    margin: auto;
+    font-size: 7px;
+    color: lightgray; }
+    .sidebar nav ul li a:hover {
+      border-bottom: 1.2px solid #65fdfe;
+      color: #65fdfe;
+      text-decoration: none;
+      text-align: center; }
+
+.twenty-four-hr .inner {
+  line-height: 0.4;
+  margin-left: 2px;
+  overflow: hidden; }
+
+.twenty-four-hr input {
+  height: 100%;
+  width: 110%;
+  max-height: 15px;
+  text-transform: uppercase;
+  font-size: 5.5px;
+  background-color: #15273b;
+  border: 0px; }
+  .twenty-four-hr input::-webkit-input-placeholder {
+    color: lightgray; }
+  .twenty-four-hr input:-ms-input-placeholder {
+    color: lightgray; }
+  .twenty-four-hr input::-ms-input-placeholder {
+    color: lightgray; }
+  .twenty-four-hr input::placeholder {
+    color: lightgray; }
+
+.magnifier, .star, .fa-wrapper {
+  font-size: 0.4rem;
+  margin: 4px; }
+
+.magnifier {
+  margin-top: 0px; }
+
+.search, .twenty-four-hr {
+  border-bottom: 0.2px solid rgba(170, 170, 170, 0.6); }
+
+.sidebar-item {
+  background-color: #15273b;
+  height: 40px;
+  width: 100%;
+  margin-top: 6px;
+  border-bottom: 0.2px solid rgba(170, 170, 170, 0.6); }
+  .sidebar-item .currency-info {
+    padding: 0;
+    float: left;
+    height: 40px; }
+    .sidebar-item .currency-info img {
+      margin-bottom: 2px;
+      margin-right: 5px; }
+    .sidebar-item .currency-info p {
+      margin-bottom: 0px;
+      font-size: 7px; }
+    .sidebar-item .currency-info h3 {
+      margin-top: 0px;
+      font-size: 7px; }
+  .sidebar-item .currency-rates {
+    float: right;
+    text-align: left;
+    padding: 0; }
+    .sidebar-item .currency-rates h4 {
+      text-align: left; }
+  .sidebar-item .currency-active {
+    padding: 0;
+    height: 100%;
+    width: 20%;
+    float: left; }
+    .sidebar-item .currency-active div.active {
+      background: #65fdfe 100%; }
+    .sidebar-item .currency-active div {
+      background: #0ba3a4 100%;
+      border-radius: 50%;
+      height: 6px;
+      width: 6px;
+      margin-top: calc(50% - 6px/2);
+      margin-left: calc(33% - 6px/2); }
+  .sidebar-item hr {
+    background-color: gray;
+    margin: 0px;
+    width: 100%; }
+  .sidebar-item h4 {
+    font-size: 7px;
+    margin-left: 20%;
+    margin-bottom: 2px; }
+
+.sidebar-item img {
+  height: 12px;
+  width: 12px;
+  float: left; }
+
+.sidebar-item h1 {
+  color: #4e6074; }
+
+.sidebar-item h3 {
+  color: white;
+  font-weight: bold; }
+
+.sidebar-item p {
+  color: #4e6074;
+  text-transform: capitalize; }
+
+p.exchange-rate, p.vol {
+  padding-left: 2%;
+  font-size: 5.38462px; }
+
+p.exchange-rate {
+  color: lightgray;
+  margin-bottom: 4px; }
+
+p.vol {
+  color: gray;
+  margin-bottom: 4px; }
+
+div.main-content {
+  padding: 0; }
+
+div.content-top-bar {
+  padding: 0; }
+  div.content-top-bar .twenty-four-dropdowns {
+    color: white;
+    border-left: 0.7px solid gray;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    height: 60%;
+    margin-top: 1vh;
+    margin-left: 50%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    div.content-top-bar .twenty-four-dropdowns div {
+      margin-right: 5px;
+      margin-left: 5px; }
+  div.content-top-bar p {
+    color: lightgray;
+    font-size: 5px;
+    margin-bottom: 3px; }
+  div.content-top-bar h6 {
+    font-size: 10px; }
+
+div.content-top-bar, div.graph-and-market {
+  display: inline-block; }
+
+.content-top-bar {
+  background-color: #174262;
+  height: 41.54px;
+  width: 100%; }
+
+.content-top-bar img {
+  height: 24px;
+  width: 24px; }
+
+.content-top-bar h4 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold; }
+
+.content-top-bar h5 {
+  font-size: 15px; }
+
+div.graph-data {
+  padding: 0; }
+  div.graph-data img {
+    width: 100%; }
+
+div.market-nav {
+  padding: 0; }
+  div.market-nav div.market-nav-item {
+    text-align: center;
+    background-color: #174262;
+    border-left: 1.3px solid #0a1a2a;
+    font-size: 8px;
+    color: #65fdfe;
+    padding: 0; }
+    div.market-nav div.market-nav-item:hover {
+      background-color: #15273b;
+      border-bottom: 1.2px solid #65fdfe; }
+
+.market {
+  background-color: #0e1e2b; }
+
+.price-regulator {
+  margin-top: 6vh; }
+  .price-regulator .main {
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    border-radius: 50%;
+    border: 3px solid; }
+    .price-regulator .main p, .price-regulator .main h5, .price-regulator .main h6 {
+      text-transform: uppercase;
+      margin: auto; }
+    .price-regulator .main p {
+      font-size: 8px;
+      font-weight: normal; }
+  .price-regulator .plus, .price-regulator .minus {
+    margin-top: 18%; }
+
+.footer {
+  background-color: #15273b; }
+  .footer nav {
+    border-bottom: 0.2px solid lightgray; }
+  .footer ul {
+    list-style-type: none;
+    height: 20px;
+    width: 34%; }
+  .footer li {
+    width: 33%;
+    float: left; }
+  .footer a {
+    color: white;
+    font-size: 10px; }
+    .footer a:hover {
+      text-decoration: none;
+      color: #65fdfe;
+      border-bottom: 1.2px solid #65fdfe; }
+
+.transaction-item {
+  background-color: #193445;
+  border-bottom: 0.05px solid lightgray;
+  color: lightgray; }
+  .transaction-item p {
+    font-size: 10px; }
+  .transaction-item img {
+    height: 16px;
+    width: 16px; }
+  .transaction-item .side {
+    text-transform: capitalize; }
+
+.cancel-btn button {
+  background-color: #193445;
+  color: white;
+  font-weight: normal;
+  font-size: 9px;
+  border-width: 0.3px;
+  border-radius: 2px;
+  border-color: gray;
+  border-style: solid; }
+  .cancel-btn button:focus {
+    outline: none; }
+
+.buy {
+  color: #9df606 !important; }
+
+.sell {
+  background: #e61ea3;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold; }
+
+.fa-caret-down {
+  color: lightgray; }
+
+.fa-search {
+  color: gray; }
+
+.fa-star {
+  color: #65fdfe; }
+
+.fa-info-circle {
+  color: #65fdfe; }

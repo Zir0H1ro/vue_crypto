@@ -1,0 +1,42 @@
+// Variable declarations
+
+
+//color variables
+$darkBlue_mid: rgb(21,39,59);
+$darkBlue_text: rgb(78,96,116);
+$buyColor:rgb(157,246,6);
+$sellColor:rgb(230,30,163);
+$sellGradient:-webkit-linear-gradient(rgb(225,24,30),rgb(230,30,163));
+$activeColor:rgb(101,253,254);
+$inactiveColor:rgb(11,163,164);
+$darkBlueGray:rgb(25,52,69);
+$darkestBlue:rgb(10,26,42);
+$darkBlue_lighter:rgb(23,66,98);
+$darkBlue_market:rgb(14,30,43);
+
+
+//size variables
+$sidebarItem_height:40px;
+$sidebarImgSize:12px;
+$activeSignSize:6px;
+$sidebarFontSize:7px;
+$topBar_height:58px;
+$priceRegulatorSize:100px;
+
+
+//Borders etc
+$sidebarInsideBorder:0.2px solid rgba(170,170,170,0.6);
+$topBorder:1.2px solid gray;
+$extBorder:1.3px solid $darkestBlue;
+
+
+//mixins
+@mixin sellText{
+    background:$sellColor;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight:bold;
+}
+
+@mixin magnifierGlass{
+}

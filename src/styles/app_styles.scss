@@ -1,0 +1,458 @@
+@import 'vars_and_mixins.scss';
+
+// Top bar stylings
+
+.top-bar{
+    background-color:$darkBlueGray;
+    height:$topBar_height;
+}
+
+.top-bar h1{
+    margin-bottom:0;
+    font-style:italic;
+    font-weight:bold;
+    color:white;
+    width:100%;
+}
+
+.fund-management div{
+    padding:0;
+}
+
+.funds{
+    text-align:right;
+    text-transform:uppercase;
+    color:lightgray;
+    border-right:$topBorder;
+    height:60%;
+    margin:auto;
+    margin-right:10px;
+    h6{
+        font-size:14px;
+    }
+}
+
+.values{
+    display:inline-block;
+    margin:auto;
+    margin-right:10px;
+    height:60%;
+    border-right:$topBorder;
+    p{
+        color:gray;
+        font-size:5px;
+        text-transform:uppercase;
+        margin-bottom:3px;
+    }
+    h4{
+        color:lightgray;
+        font-size:12px;
+        margin-bottom:3px;
+    }
+    div{
+        margin-right:3.2%;
+    }
+}
+
+.country-flag img{
+    width:40%;
+}
+
+.dx-logo{
+    width:3%;
+    margin-top:1.4%;
+    margin-left:1.2%;
+    height:40%;
+    div{
+        height:18%;
+        margin-bottom:15%;
+        border-radius:1.5px;
+    }
+    .red{
+        width:80%;
+        background:$sellGradient;
+    }
+    .green{
+        width:60%;
+        background-color:$buyColor;
+    }
+    .blue{
+        width:80%;
+        background-color:$activeColor;
+    }
+}
+
+.user-data{
+    margin-top:12px;
+}
+
+.user-data h4{
+    font-size:10px;
+    color:lightgray;
+    text-transform:capitalize;
+}
+
+.time-data p{
+    font-size:6px;
+    color:lightgray;
+    text-transform:capitalize;
+    margin-right:3px;
+}
+
+// Sidebar stylings
+
+div.sidebar{
+    width:28%;
+    background-color:$darkBlue_mid;
+    padding:0;
+    border-right:$extBorder;
+}
+
+.sidebar nav ul{
+    list-style-type:none;
+    float:left;
+    padding:0;
+    margin-bottom:4px;
+    width:100%;
+    height:100%;
+    border-bottom:$sidebarInsideBorder;
+    text-align:center;
+}
+
+.sidebar nav ul li {
+    width:25%;
+    float:left;
+    a{  
+        margin:auto;
+        font-size:$sidebarFontSize;
+        color:lightgray;
+        &:hover{
+            border-bottom:1.2px solid $activeColor;
+            color:$activeColor;
+            text-decoration:none;
+            text-align:center;
+        }
+    }
+}
+
+.twenty-four-hr .inner{
+    line-height:0.4;
+    margin-left:2px;
+    overflow:hidden;
+}
+
+.twenty-four-hr input{
+    height:100%;
+    width:110%;
+    max-height:15px;
+    text-transform:uppercase;
+    font-size:5.5px;
+    background-color:$darkBlue_mid;
+    border:0px;
+    &::placeholder{
+        color:lightgray;
+    }
+}
+
+.magnifier,.star, .fa-wrapper{
+    font-size:0.4rem;
+    margin:4px;
+}
+
+.magnifier{
+    margin-top:0px;
+}
+
+.search,.twenty-four-hr{
+    border-bottom:$sidebarInsideBorder;
+}
+
+
+.sidebar-item{
+    background-color:$darkBlue_mid;
+    height:$sidebarItem_height;
+    width:100%;
+    margin-top:6px;
+    border-bottom:$sidebarInsideBorder;
+    .currency-info{
+        padding:0;
+        float:left;
+        height:$sidebarItem_height;
+        img{
+            margin-bottom:2px;
+            margin-right:5px;
+        }
+        p{
+            margin-bottom:0px;
+            font-size:$sidebarFontSize;
+        }
+        h3{
+            margin-top:0px;
+            font-size:$sidebarFontSize;
+        }
+    }
+    .currency-rates{
+        float:right;
+        text-align:left;
+        padding:0;
+        h4{
+            text-align:left;
+        }
+    }
+    .currency-active{
+        padding:0;
+        height:100%;
+        width:20%;
+        float:left;
+        div.active{
+            background:$activeColor 100%;
+        }
+        div{
+            background:$inactiveColor 100%;
+            border-radius:50%;
+            height:$activeSignSize;
+            width:$activeSignSize;
+            margin-top:calc(50% - #{$activeSignSize}/2);
+            margin-left:calc(33% - #{$activeSignSize}/2);
+        }
+    }
+    hr{
+        background-color:gray;
+        margin:0px;
+        width:100%;
+    }
+    h4{
+        font-size:$sidebarFontSize;
+        margin-left:20%;
+        margin-bottom:2px;
+    }
+}
+
+
+.sidebar-item img{
+    height:$sidebarImgSize;
+    width:$sidebarImgSize;
+    float:left;
+}
+
+.sidebar-item h1{
+    color:$darkBlue_text;
+}
+
+.sidebar-item h3{
+    color:white;
+    font-weight:bold;
+}
+
+.sidebar-item p{
+    color:$darkBlue_text;
+    text-transform:capitalize;
+}
+
+p.exchange-rate, p.vol{
+    padding-left:2%;
+    font-size:$sidebarFontSize/1.3;
+}
+
+p.exchange-rate{
+    color:lightgray;
+    margin-bottom:4px;
+}
+
+p.vol{
+    color:gray;
+    margin-bottom:4px;
+}
+
+//Main content stylings
+
+div.main-content{
+    padding:0;
+}
+
+div.content-top-bar{
+    padding:0;
+    .twenty-four-dropdowns{
+        color:white;
+        border-left:0.7px solid gray;
+        justify-content:flex-end;
+        height:60%;
+        margin-top:1vh;
+        margin-left:50%;
+        justify-content:space-between;
+        div{
+            margin-right:5px;
+            margin-left:5px;
+        }
+    }
+    p{
+        color:lightgray;
+        font-size:5px;
+        margin-bottom:3px;
+    }
+    h6{
+        font-size:10px;
+    }
+}
+
+div.content-top-bar,div.graph-and-market{
+    display:inline-block;
+}
+
+.content-top-bar{
+    background-color:$darkBlue_lighter;
+    height:41.54px;
+    width:100%;
+}
+
+.content-top-bar img{
+    height:24px;
+    width:24px;
+}
+
+.content-top-bar h4{
+    color:white;
+    text-transform:uppercase;
+    font-size:15px;
+    font-weight:bold;
+}
+
+.content-top-bar h5{
+    font-size:15px;
+}
+
+div.graph-data{
+    padding:0;
+    img{
+        width:100%;
+    }
+}
+
+div.market-nav{
+    padding:0;
+    div.market-nav-item{
+        text-align:center;
+        background-color:$darkBlue_lighter;
+        border-left:$extBorder;
+        font-size:8px;
+        color:$activeColor;
+        padding:0;
+        &:hover{
+            background-color:$darkBlue_mid;
+            border-bottom:1.2px solid $activeColor;
+        }
+    }
+}
+
+.market{
+    background-color:$darkBlue_market;
+}
+
+//Price regulator stylings
+    
+.price-regulator{
+    margin-top:6vh;
+     .main{
+        height:$priceRegulatorSize;
+        width:$priceRegulatorSize;
+        text-align:center;
+        border-radius:50%;
+        border:3px solid;
+        p,h5,h6{
+            text-transform:uppercase;
+            margin:auto;
+        }
+        p{
+            font-size:8px;
+            font-weight:normal;
+        }
+        &.sell{
+        }
+    }
+    .plus,.minus{
+        margin-top:18%;
+    }
+}
+
+// Footer stylings
+
+.footer{
+    background-color:$darkBlue_mid;
+    nav{
+        border-bottom:0.2px solid lightgray;
+    }
+    ul{
+        list-style-type:none;
+        height:20px;
+        width:34%;
+    }
+    li{
+        width:33%;
+        float:left;
+    }
+    a{
+        color:white;
+        font-size:10px;
+        &:hover{
+            text-decoration:none;
+            color:$activeColor;
+            border-bottom:1.2px solid $activeColor;
+        }
+    }
+}
+
+.transaction-item{
+    background-color:$darkBlueGray;
+    border-bottom:0.05px solid lightgray;
+    color:lightgray;
+    p{
+        font-size:10px;
+    }
+    img{
+        height:16px;
+        width:16px;
+    }
+    .side{
+        text-transform:capitalize;
+    }
+}
+
+.cancel-btn button{
+    background-color:$darkBlueGray;
+    color:white;
+    font-weight:normal;
+    font-size:9px;
+    border-width:0.3px;
+    border-radius:2px;
+    border-color:gray;
+    border-style:solid;
+    &:focus{
+        outline:none;
+    }
+}
+
+// General stylings
+
+.buy{
+    color:$buyColor !important;
+}
+
+.sell{
+    @include sellText;
+}
+
+.fa-caret-down{
+    color:lightgray;    
+}
+
+.fa-search{
+    color:gray;
+}
+
+.fa-star{
+    color:$activeColor;
+}
+
+.fa-info-circle{
+    color:$activeColor;
+}
